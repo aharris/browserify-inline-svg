@@ -2,7 +2,7 @@ var through2 = require('through2');
 var _ = require('lodash');
 var fs = require( 'fs' );
 
-module.exports = function () {
+module.exports = function (opts) {
   return through2.obj(function (chunk, enc, callback) {
     var string = chunk.toString(),
       regex = /<img(?:.*?)>/g,
@@ -19,7 +19,7 @@ module.exports = function () {
           var classMatch = /class=(?:"|\\'|')/;
           var endMatch = /(?:"|\\'|')/;
 
-          var filePath = './target/www/app/' + it.split( srcMatch )[1].split( endMatch )[0];
+          var filePath = opts.basePath + it.split( srcMatch )[1].split( endMatch )[0];
           var contents = fs.readFileSync(filePath, 'utf8');
 
           if ( _.includes(it, 'class="') ) {

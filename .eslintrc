@@ -1,0 +1,24 @@
+{
+  "extends": "eslint:recommended",
+  "globals": {},
+
+  "env": {
+    "browser": true,      // browser global variables
+    "node": true,         // Node.js global variables and Node.js-specific rules
+    "amd": false,         // defines require() and define() as global variables as per the amd spec
+  },
+
+  "rules": {
+    "eqeqeq": 2,
+    "no-unused-vars": 1,
+    "no-console": 1,
+    "indent": [2, 2],
+    "camelcase": [0, { "properties": "always" }],
+    "comma-spacing": [2, { "before": false, "after": true }],
+    "brace-style": [2, "stroustrup", { "allowSingleLine": false }],
+    "consistent-this": [2, "self"],
+    "object-curly-spacing": [2, "always"],
+    "no-redeclare": 0,
+    "semi": 2
+  }
+}

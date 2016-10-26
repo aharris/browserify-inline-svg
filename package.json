@@ -1,0 +1,23 @@
+{
+  "name": "browserify-inline-svg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aharris/browserify-inline-svg.git"
+  },
+  "author": "Ashton Harris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aharris/browserify-inline-svg/issues"
+  },
+  "homepage": "https://github.com/aharris/browserify-inline-svg#readme",
+  "dependencies": {
+    "lodash": "^4.16.4",
+    "through2": "^2.0.1"
+  }
+}

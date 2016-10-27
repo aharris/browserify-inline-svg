@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/aharris/browserify-inline-svg.git"
   },
-  "author": "Ashton Harris",
+  "author": "Ashton Harris <ashtonharris.me@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/aharris/browserify-inline-svg/issues"

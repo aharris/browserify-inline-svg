@@ -16,7 +16,7 @@ Add the browserify plugin and pass in the `basePath`
       }))
       .pipe(process.stdout);
 
-Add `data-inline-svg` to you image
+Add `data-inline-svg` to your image
 
     <img data-inline-svg class="my-icon" src="assets/icons/my-icon.svg" />
 
